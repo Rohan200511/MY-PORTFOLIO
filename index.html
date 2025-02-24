@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/5be58e5b5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Coder</p>
+                <h1>Hi, I'm <span>Rohan</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>👋Hi Everyone, I am,Rohan, currently pursuing my graduation in CSE(AI) degree at G.L. BAJAJ INSTITUTE OF TECHNOLOGY AND MANAGEMENT🎓. I'm a Passionate coding student eager to learn and create, finding opportunities to grow in tech world👩‍💻.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>C++ Language</span><br>A generic programming language for building Software</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul></ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br>B.tech from GLBITM</li>
+                            <li><span>2023</span><br>XII from RMVM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                     <h2>Web Design</h2>
+                     <p>I have developed an Online Voting System for secure and user-friendly digital voting. Additionally, I created multiple landing pages with responsive and visually appealing designs. I also built an Amazon Clone with features like product listings, user authentication, and a shopping cart. These projects showcase my expertise in front-end and back-end web development.</p>
+                     <a href="https://drive.google.com/drive/folders/1HalbLb3ptJVPng-jvhmaOAqmqLFIOIjX?usp=drive_link">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-duotone fa-solid fa-laptop"></i>
+                    <h2>C++ programming</h2>
+                    <p>I have basic knowledge of **C++** and have completed several tasks involving problem-solving and programming fundamentals. My experience includes implementing simple algorithms and working on small projects to strengthen my coding skills.</p>
+                    <a href="#">Learn more</a>
+               </div>
+               <div> 
+                <span><h2>COMING SOON</h2></span>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.png">
+                    <div class="layer">
+                        <h3>Online Voting System</h3>
+                        <p>I developed an Online Voting System using C++, enabling secure and efficient digital elections. The system ensures voter authentication, prevents duplicate voting, and maintains data integrity. It streamlines the voting process, making elections more accessible and transparent.</p>
+                        <a href="https://drive.google.com/drive/folders/1HalbLb3ptJVPng-jvhmaOAqmqLFOIjX?usp=drive_link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.png">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>I designed and developed a **Landing Page** during my internship, focusing on a responsive and user-friendly interface. The page was optimized for performance, enhancing user engagement and navigation. It featured modern UI/UX elements, ensuring a seamless browsing experience.</p>
+                        <a href="https://drive.google.com/file/d/1BrGd0VcMg1kCiKppmk-PsaXVR33u7FY9/view?usp=drive_link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rohangupta112005@gmail.com</p>
+                    <p><i class="fa-duotone fa-solid fa-phone"></i> 9350700364</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100054372139585"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/rohan_gupta_._/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rohan-503949312/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Rohan200511"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="downloadcv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw1o1eClD13nuvymbiarvq-LffnLyszHuyObaMjTSLCeO2S8S1ztqnhByS0n4iRxifE6g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Hello,Your message has been Sent."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
